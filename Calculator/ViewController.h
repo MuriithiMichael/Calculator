@@ -11,7 +11,7 @@ typedef enum{ Plus,Minus,Multiply,Divide} CalcOperation;
 
 @interface ViewController : UIViewController{
     
-    IBOutlet UITextField *txtDisplay;
+    IBOutlet UILabel *lblDisplay;
     NSString *storage;
     CalcOperation operation;
     
@@ -23,6 +23,16 @@ typedef enum{ Plus,Minus,Multiply,Divide} CalcOperation;
 - (IBAction)button3:(UIButton *)sender;
 - (IBAction)btnPlus:(UIButton *)sender;
 - (IBAction)btnEquals:(UIButton *)sender;
+- (IBAction)btnMinus:(UIButton *)sender;
+- (IBAction)btnMultiply:(UIButton *)sender;
+- (IBAction)button4:(UIButton *)sender;
+- (IBAction)button5:(UIButton *)sender;
+- (IBAction)button6:(UIButton *)sender;
+- (IBAction)button7:(UIButton *)sender;
+- (IBAction)button8:(UIButton *)sender;
+- (IBAction)button9:(UIButton *)sender;
+- (IBAction)buttonDivide:(UIButton *)sender;
+- (IBAction)btnDecimalPoint:(UIButton *)sender;
 
 @end
 
