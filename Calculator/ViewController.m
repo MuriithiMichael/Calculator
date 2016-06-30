@@ -55,16 +55,16 @@
     switch(operation){
         case Plus:
             //computaion = [value longLongValue]+[storage longLongValue];
-            lblDisplay.text = [NSString stringWithFormat:@"%4.f",[value  floatValue ] + [storage floatValue]];
+            lblDisplay.text = [NSString stringWithFormat:@"%2.f",[value  floatValue ] + [storage floatValue]];
             break;
         case Minus:
-            lblDisplay.text = [NSString stringWithFormat:@"%4.f",[storage floatValue] - [value floatValue]];
+            lblDisplay.text = [NSString stringWithFormat:@"%2.f",[storage floatValue] - [value floatValue]];
             break;
         case Divide:
-            lblDisplay.text = [NSString stringWithFormat:@"%4.f",[storage floatValue] / [value floatValue]];
+            lblDisplay.text = [NSString stringWithFormat:@"%2.f",[storage floatValue] / [value floatValue]];
             break;
         case Multiply:
-            lblDisplay.text = [NSString stringWithFormat:@"%4.f",[storage floatValue] * [value floatValue]];
+            lblDisplay.text = [NSString stringWithFormat:@"%2.f",[storage floatValue] * [value floatValue]];
             break;
     }
 }
